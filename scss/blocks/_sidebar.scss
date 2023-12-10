@@ -1,0 +1,153 @@
+.sidebar {
+  width: auto;
+
+  &__head {
+    color: #fff;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    margin-left: 150px;
+    width: 932px;
+  }
+
+  &__list {
+    width: 932px;
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  &__item--txt {
+    color: #fff;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    transform: translateY(-30px);
+  }
+
+  &__item--head {
+    padding: 15px;
+    color: #79c8c7;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  &__item--head--info {
+    color: #fff;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  &__item--img {
+    padding: 20px;
+    border-radius: 50%;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__img--round {
+    margin-left: 1148px;
+  }
+}
+
+// tablet
+@media (max-width: 768px) {
+  .sidebar {
+    margin-left: 60px;
+    &__head {
+      transform: translateX(-30px);
+      width: 440px;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+    }
+
+    &__item {
+      text-align: center;
+    }
+
+    &__item--txt {
+      width: 440px;
+      margin-left: 130px;
+    }
+
+    &__list {
+      display: inherit;
+    }
+
+    &__img--round {
+      margin: inherit;
+      margin-left: 400px;
+    }
+  }
+}
+
+// mobile
+
+@media (max-width: 376px) {
+  .sidebar {
+    .container {
+      width: 375px;
+    }
+
+    &__head {
+      transform: translateX(-30px);
+      width: 300px;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+    }
+    &__item--txt {
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 25px;
+      width: 327px;
+    }
+
+    &__item--head,
+    &__item--head--info,
+    &__item--img,
+    &__list--quote {
+      margin-left: 240px;
+    }
+
+    &__img--round {
+      margin: inherit;
+      margin-left: 300px;
+    }
+
+    &__item--head--info,
+    &__item--head {
+      width: 200px;
+      transform: translateX(-60px);
+    }
+  }
+}
